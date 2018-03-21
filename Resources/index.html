@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1504.83">
+  <style type="text/css">
+  p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 18.0px Helvetica; -webkit-text-stroke: #000000}
+  p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Tahoma; -webkit-text-stroke: #000000; min-height: 17.0px}
+  p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 18.0px 'PingFang SC'; -webkit-text-stroke: #000000}
+  p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 18.0px Menlo; -webkit-text-stroke: #000000}
+  p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 18.0px Menlo; -webkit-text-stroke: #000000; min-height: 21.0px}
+  p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 18.0px Menlo; color: #d12f1b; -webkit-text-stroke: #d12f1b}
+  p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Tahoma; -webkit-text-stroke: #000000}
+  p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 18.0px Menlo; color: #703daa; -webkit-text-stroke: #703daa}
+  p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Arial; -webkit-text-stroke: #000000}
+  p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; font: 18.0px Menlo; color: #78492a; -webkit-text-stroke: #78492a}
+  span.s1 {font-kerning: none}
+  span.s2 {font: 18.0px Menlo; font-kerning: none}
+  span.s3 {font-kerning: none; color: #703daa; -webkit-text-stroke: 0px #703daa}
+  span.s4 {font-kerning: none; color: #272ad8; -webkit-text-stroke: 0px #272ad8}
+  span.s5 {font-kerning: none; color: #d12f1b; -webkit-text-stroke: 0px #d12f1b}
+  span.s6 {font: 18.0px 'PingFang SC'; font-kerning: none}
+  span.s7 {font-kerning: none; color: #ba2da2; -webkit-text-stroke: 0px #ba2da2}
+  span.s8 {font-kerning: none; color: #3e1e81; -webkit-text-stroke: 0px #3e1e81}
+  span.s9 {font: 18.0px Menlo; font-kerning: none; color: #703daa; -webkit-text-stroke: 0px #703daa}
+  span.s10 {font-kerning: none; color: #000000; -webkit-text-stroke: 0px #000000}
+  span.s11 {font: 18.0px 'PingFang SC'; font-kerning: none; color: #000000; -webkit-text-stroke: 0px #000000}
+  span.s12 {font-kerning: none; color: #78492a; -webkit-text-stroke: 0px #78492a}
+  span.s13 {font-kerning: none; color: #4f8187; -webkit-text-stroke: 0px #4f8187}
+  span.s14 {font: 18.0px Menlo; font-kerning: none; color: #ba2da2; -webkit-text-stroke: 0px #ba2da2}
+  span.s15 {font: 18.0px Menlo; font-kerning: none; color: #272ad8; -webkit-text-stroke: 0px #272ad8}
+  span.s16 {font: 18.0px Menlo; font-kerning: none; color: #4f8187; -webkit-text-stroke: 0px #4f8187}
+  span.s17 {font: 18.0px 'Apple Color Emoji'; font-kerning: none; background-color: #ffe29a}
+  span.s18 {font-kerning: none; background-color: #ffe29a}
+  span.s19 {font: 18.0px 'PingFang SC'; font-kerning: none; color: #008400; -webkit-text-stroke: 0px #008400}
+  span.s20 {font: 18.0px Menlo; font-kerning: none; color: #d12f1b; -webkit-text-stroke: 0px #d12f1b}
+</style>
+</head>
+<body>
+    <p class="p1"><span class="s1">Part I</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p3"><span class="s2">    </span><span class="s1">风险代码：</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p4"><span class="s1">        </span><span class="s3">NSString</span><span class="s1"> *string = array[</span><span class="s4">1</span><span class="s1">][</span><span class="s5">@"key"</span><span class="s1">];</span></p>
+    <p class="p5"><span class="s1"></span><br></p>
+    <p class="p4"><span class="s1">    </span><span class="s6">问题：</span><span class="s1">1.array</span><span class="s6">不一定是</span><span class="s3">NSArray</span><span class="s6">。</span></p>
+    <p class="p4"><span class="s1">         2.array</span><span class="s6">不一定有两个以上元素。</span></p>
+    <p class="p4"><span class="s1">         3.array[</span><span class="s4">1</span><span class="s1">]</span><span class="s6">不一定是个</span><span class="s3">NSDictionary</span><span class="s6">。</span></p>
+    <p class="p4"><span class="s1">         4.array[</span><span class="s4">1</span><span class="s1">][</span><span class="s5">@"key"</span><span class="s1">]</span><span class="s6">不一定是个</span><span class="s3">NSString</span><span class="s6">。</span></p>
+    <p class="p3"><span class="s2">    </span><span class="s1">结论：</span><span class="s2">1 ~ 3</span><span class="s1">可能能造成崩溃，</span><span class="s2">4</span><span class="s1">可能造成逻辑错误甚至崩溃。</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p3"><span class="s2">    </span><span class="s1">安全代码：</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p4"><span class="s1">    </span><span class="s3">NSString</span><span class="s1"> *string = </span><span class="s7">nil</span><span class="s1">;</span></p>
+    <p class="p4"><span class="s1">    </span><span class="s7">if</span><span class="s1"> ([array </span><span class="s8">isKindOfClass</span><span class="s1">:[</span><span class="s3">NSArray</span><span class="s1"> </span><span class="s8">class</span><span class="s1">]] &amp;&amp;</span></p>
+    <p class="p4"><span class="s1">        array.</span><span class="s3">count</span><span class="s1"> &gt; </span><span class="s4">1</span><span class="s1">)</span></p>
+    <p class="p4"><span class="s1">    {</span></p>
+    <p class="p4"><span class="s1">        </span><span class="s3">NSDictionary</span><span class="s1"> *dictionary = array[</span><span class="s4">1</span><span class="s1">];</span></p>
+    <p class="p4"><span class="s1">        </span><span class="s7">if</span><span class="s1"> ([dictionary </span><span class="s8">isKindOfClass</span><span class="s1">:[</span><span class="s3">NSDictionary</span><span class="s1"> </span><span class="s8">class</span><span class="s1">]]) {</span></p>
+    <p class="p4"><span class="s1">            </span><span class="s7">id</span><span class="s1"> value = dictionary[</span><span class="s5">@"key"</span><span class="s1">];</span></p>
+    <p class="p4"><span class="s1">            </span><span class="s7">if</span><span class="s1"> ([value </span><span class="s8">isKindOfClass</span><span class="s1">:[</span><span class="s3">NSString </span><span class="s8">class</span><span class="s1">]]) {</span></p>
+    <p class="p4"><span class="s1">                string = value;</span></p>
+    <p class="p4"><span class="s1">            }</span></p>
+    <p class="p4"><span class="s1">        }</span></p>
+    <p class="p4"><span class="s1">    }</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p3"><span class="s2">    </span><span class="s1">虽然确保了</span><span class="s2">string</span><span class="s1">的正确性，但是增加了编写成本，也提高了阅读成本。</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p1"><span class="s1">Part II</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p3"><span class="s2">    </span><span class="s1">基于以上问题，采取扩展</span><span class="s9">NSArray</span><span class="s1">和</span><span class="s9">NSDictionary</span><span class="s1">的方法，使用起来和原生写法几乎没有区别。</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p6"><span class="s10">    </span><span class="s11">首先，需要</span><span class="s10"> </span><span class="s12">#import</span><span class="s10"> </span><span class="s1">"NSArray+Extension.h"</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p4"><span class="s1">    </span><span class="s6">对于</span><span class="s3">NSArray</span><span class="s6">，</span></p>
+    <p class="p4"><span class="s1">    </span><img src="https://github.com/TozyZuo/NSArrayNSDictionary-Extention/raw/master/Resources/stringAtIndex.gif" />
+    <p class="p7"><span class="s1">       </span></p>
+    <p class="p4"><span class="s1">    </span><span class="s6">只需在</span><span class="s1">“array”</span><span class="s6">与</span><span class="s1">“[</span><span class="s4">1</span><span class="s1">]”</span><span class="s6">之间加入</span><span class="s1">“.</span><span class="s13">stringAtIndex</span><span class="s1">”</span><span class="s6">，即</span><span class="s3"> NSString</span><span class="s1"> *string = array.</span><span class="s13">stringAtIndex</span><span class="s1">[</span><span class="s4">1</span><span class="s1">](</span><span class="s6">此处有代码提示</span><span class="s1">)</span><span class="s6">，</span></p>
+    <p class="p4"><span class="s1">    </span><span class="s6">就可以获取到想要的类型</span><span class="s3">NSString</span><span class="s6">，对于</span><span class="s3">NSNumber</span><span class="s6">，可以用</span><span class="s1"> </span><span class="s3">NSNumber</span><span class="s1"> *number = array.</span><span class="s13">numberAtIndex</span><span class="s1">[</span><span class="s4">index</span><span class="s1">]</span><span class="s6">。</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p3"><span class="s2">    </span><span class="s1">优势：</span><span class="s2">1.</span><span class="s1">不用考虑</span><span class="s2">array</span><span class="s1">是不是个</span><span class="s9">NSArray</span><span class="s1">，如果是，那么就走正确逻辑，如果不是，会返回</span><span class="s14">nil</span><span class="s1">。</span></p>
+    <p class="p3"><span class="s2">         2.</span><span class="s1">不用考虑</span><span class="s2">array</span><span class="s1">有多少个元素，如果</span><span class="s15">index</span><span class="s1">正确，那么就走正确逻辑，如果越界，会返回</span><span class="s14">nil</span><span class="s1">。</span></p>
+    <p class="p4"><span class="s1">         3.</span><span class="s6">不用考虑拿到的类型，如果</span><span class="s1">array.</span><span class="s13">stringAtIndex</span><span class="s1">[</span><span class="s4">1</span><span class="s1">]</span><span class="s6">拿到的是个</span><span class="s3">NSString</span><span class="s6">，那么返回，如果不是，会返回</span><span class="s7">nil</span><span class="s6">。</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p4"><span class="s1">    </span><span class="s6">回到</span><span class="s1">Demo</span><span class="s6">，</span><span class="s3">NSString</span><span class="s1"> *string = array[</span><span class="s4">1</span><span class="s1">][</span><span class="s5">@"key"</span><span class="s1">]</span><span class="s6">，现在可以通过</span><span class="s1">array.</span><span class="s13">dictionaryAtIndex</span><span class="s1">[</span><span class="s4">1</span><span class="s1">][</span><span class="s5">@"key"</span><span class="s1">]</span><span class="s6">拿到</span><span class="s5">@"key"</span></p>
+    <p class="p3"><span class="s2">    </span><span class="s1">对应的</span><span class="s2">object</span><span class="s1">了，但是，还是不能解决问题</span><span class="s2">4</span><span class="s1">。下面就是对</span><span class="s9">NSDictionary</span><span class="s1">的扩展，用法类似于</span><span class="s9">NSArray</span><span class="s1">。</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p6"><span class="s10">    </span><span class="s11">首先</span><span class="s10"> </span><span class="s12">#import</span><span class="s10"> </span><span class="s1">"NSDictionary+Extension.h"</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p8"><span class="s10">    </span><span class="s11">对于</span><span class="s1">NSDictionary</span><span class="s11">，</span></p>
+    <p class="p4"><span class="s1">    </span><img src="https://github.com/TozyZuo/NSArrayNSDictionary-Extention/raw/master/Resources/dictionaryForKey.gif" />
+    <p class="p7"><span class="s1">        </span></p>
+    <p class="p4"><span class="s1">    </span><span class="s6">同</span><span class="s3">NSArray</span><span class="s6">一样，在</span><span class="s1">“dictionary”</span><span class="s6">与</span><span class="s1">“[</span><span class="s5">@"key"</span><span class="s1">]”</span><span class="s6">之间加入想要的类型，如</span><span class="s1">“.</span><span class="s13">stringForKey</span><span class="s1">”</span><span class="s6">，注意，是</span><span class="s1"> </span><span class="s13">ForKey</span><span class="s1"> </span><span class="s6">，不是</span><span class="s1"> </span><span class="s13">AtIndex</span><span class="s1"> </span><span class="s6">。</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p4"><span class="s1">    </span><span class="s6">另外，还有一点要注意的是</span><span class="s3">NSDictionary</span><span class="s6">的泛型，</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p4"><span class="s1">    </span><span class="s6">如声明一个</span><span class="s3">NSDictionary</span><span class="s1">&lt;</span><span class="s3">NSString</span><span class="s1"> *, </span><span class="s3">NSArray</span><span class="s1">&lt;</span><span class="s13">MyObject</span><span class="s1"> *&gt; *&gt; *dictionary;</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p4"><span class="s1">    case 1:</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p9"><span class="s2">        </span><span class="s9">NSString</span><span class="s2"> *string = dictionary.</span><span class="s16">stringForKey</span><span class="s2">[</span><span class="s15">@1</span><span class="s2">];</span><span class="s17">⚠️</span><span class="s18">Incompatible pointer types sending 'NSNumber *' to parameter of type 'NSString *'</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p4"><span class="s1">        1.</span><span class="s6">关于</span><span class="s1">key</span><span class="s6">。传</span><span class="s1">key</span><span class="s6">是</span><span class="s3">NSNumber</span><span class="s6">的话就会报警告</span></p>
+    <p class="p4"><span class="s1">        2.</span><span class="s6">关于</span><span class="s1">value</span><span class="s6">。虽然声明了</span><span class="s1">dictionary</span><span class="s6">的</span><span class="s1">value</span><span class="s6">是</span><span class="s3">NSArray</span><span class="s1">&lt;</span><span class="s13">MyObject</span><span class="s1"> *&gt;</span><span class="s6">类型，但是该方法取的是</span><span class="s3">NSString</span><span class="s6">，不会触发编译器警告</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p4"><span class="s1">    case 2:</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p4"><span class="s1">        value</span><span class="s6">是指定泛型容器，如</span><span class="s3">NSArray</span><span class="s1">&lt;</span><span class="s13">MyObject</span><span class="s1"> *&gt;</span><span class="s6">，通过</span><span class="s13">arrayForKey</span><span class="s6">是拿不到泛型的，举例</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p4"><span class="s1">        1.</span><span class="s3">NSArray</span><span class="s1"> *array = dictionary.</span><span class="s13">arrayForKey</span><span class="s1">[</span><span class="s5">@"key"</span><span class="s1">]; </span><span class="s19">// 编译器无警告</span></p>
+    <p class="p4"><span class="s1">        2.</span><span class="s3">NSArray</span><span class="s1">&lt;</span><span class="s3">NSString</span><span class="s1"> *&gt; *array = dictionary.</span><span class="s13">arrayForKey</span><span class="s1">[</span><span class="s5">@"key"</span><span class="s1">]; </span><span class="s19">// 编译器无警告，拿不到泛型类型</span></p>
+    <p class="p4"><span class="s1">        3.</span><span class="s3">NSArray</span><span class="s1"> *array = dictionary[</span><span class="s5">@"key"</span><span class="s1">]; </span><span class="s19">// 编译器无警告</span></p>
+    <p class="p4"><span class="s1">        4.</span><span class="s3">NSArray</span><span class="s1">&lt;</span><span class="s3">NSString</span><span class="s1"> *&gt; *array = dictionary[</span><span class="s5">@"key"</span><span class="s1">]; </span><span class="s19">// 编译器有警告，可以拿到泛型类型</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p4"><span class="s1">        </span><span class="s6">问题</span><span class="s1">2</span><span class="s6">原因：</span><span class="s13">arrayForKey</span><span class="s6">返回的是个</span><span class="s3">NSArray</span><span class="s1"> *</span><span class="s6">，并非</span><span class="s3">NSArray</span><span class="s1">&lt;ObjectType&gt; *</span><span class="s6">，也不能返回</span><span class="s3">NSArray</span><span class="s1">&lt;ObjectType&gt; *</span><span class="s6">，</span></p>
+    <p class="p3"><span class="s2">        </span><span class="s1">具体原因不在此展开。</span><span class="s9">NSArray</span><span class="s1">也同样存在该问题。</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p1"><span class="s1">Part III</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p8"><span class="s10">    </span><span class="s11">目前</span><span class="s1">NSArray</span><span class="s11">和</span><span class="s1">NSDictionary</span><span class="s11">实现了</span><span class="s1">NSString</span><span class="s11">、</span><span class="s1">NSNumber</span><span class="s11">、</span><span class="s1">NSArray</span><span class="s11">、</span><span class="s1">NSDictionary</span><span class="s11">的安全取值，如果想要实现更多的类型，可以通过宏扩展。</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p4"><span class="s1">    </span><span class="s6">扩展</span><span class="s3">NSArray</span><span class="s6">的宏如下：</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p10"><span class="s10">    </span><span class="s1">NSArrayExtensionDeclare</span><span class="s10">(</span><span class="s3">OneClass</span><span class="s10">, objectName)</span></p>
+    <p class="p10"><span class="s10">    </span><span class="s1">NSArrayExtensionSynthesize</span><span class="s10">(</span><span class="s3">OneClass</span><span class="s10">, objectName)</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p3"><span class="s2">    </span><span class="s1">实现的方法：</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p4"><span class="s1">    </span><span class="s3">OneClass</span><span class="s1"> *object = array.</span><span class="s13">objectNameAtIndex</span><span class="s1">[</span><span class="s4">1</span><span class="s1">];</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p8"><span class="s10">    </span><span class="s11">扩展</span><span class="s1">NSDictionary</span><span class="s11">的宏如下：</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p10"><span class="s10">    </span><span class="s1">NSDictionaryExtensionDeclare</span><span class="s10">(</span><span class="s3">OneClass</span><span class="s10">, objectName)</span></p>
+    <p class="p10"><span class="s10">    </span><span class="s1">NSDictionaryExtensionSynthesize</span><span class="s10">(</span><span class="s3">OneClass</span><span class="s10">, objectName)</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p3"><span class="s2">    </span><span class="s1">实现的方法：</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p4"><span class="s1">    </span><span class="s3">OneClass</span><span class="s1"> *object = array.</span><span class="s13">objectNameForKey</span><span class="s1">[</span><span class="s5">@"key"</span><span class="s1">];</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p4"><span class="s1">    </span><span class="s6">如</span><span class="s3">NSData</span><span class="s6">，在</span><span class="s5">.h</span><span class="s6">文件中加入如下宏</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p10"><span class="s10">    </span><span class="s1">NSArrayExtensionDeclare</span><span class="s10">(</span><span class="s3">NSData</span><span class="s10">, data)</span></p>
+    <p class="p10"><span class="s10">    </span><span class="s1">NSDictionaryExtensionDeclare</span><span class="s10">(</span><span class="s3">NSData</span><span class="s10">, data)</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p3"><span class="s2">    </span><span class="s1">在</span><span class="s20">.m</span><span class="s1">文件中加入如下宏</span></p>
+    <p class="p10"><span class="s10">   </span><span class="s1"> NSArrayExtensionSynthesize</span><span class="s10">(</span><span class="s3">NSData</span><span class="s10">, data)</span></p>
+    <p class="p10"><span class="s10">   </span><span class="s1"> NSDictionaryExtensionSynthesize</span><span class="s10">(</span><span class="s3">NSData</span><span class="s10">, data)</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p3"><span class="s2">    </span><span class="s1">然后就可以愉快的玩耍</span><span class="s9">NSData</span><span class="s1">了</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p4"><span class="s1">    </span><span class="s3">NSData</span><span class="s1"> *data = dictionary.</span><span class="s13">dataForKey</span><span class="s1">[</span><span class="s5">@"key"</span><span class="s1">];</span></p>
+    <p class="p4"><span class="s1">    </span><span class="s3">NSData</span><span class="s1"> *data = array.</span><span class="s13">dataAtIndex</span><span class="s1">[</span><span class="s4">1</span><span class="s1">];</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p4"><span class="s1">    </span><span class="s6">同样支持</span><span class="s1">Custom Class</span><span class="s6">，如</span><span class="s13">MyObject</span><span class="s6">，</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p10"><span class="s10">    </span><span class="s1">NSArrayExtensionDeclare</span><span class="s10">(</span><span class="s13">MyObject</span><span class="s10">, myObject)</span></p>
+    <p class="p10"><span class="s10">    </span><span class="s1">NSDictionaryExtensionDeclare</span><span class="s10">(</span><span class="s13">MyObject</span><span class="s10">, myObject)</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p10"><span class="s10">    </span><span class="s1">NSArrayExtensionSynthesize</span><span class="s10">(</span><span class="s13">MyObject</span><span class="s10">, myObject)</span></p>
+    <p class="p10"><span class="s10">    </span><span class="s1">NSDictionaryExtensionSynthesize</span><span class="s10">(</span><span class="s13">MyObject</span><span class="s10">, myObject)</span></p>
+    <p class="p2"><span class="s1"></span><br></p>
+    <p class="p4"><span class="s1">    </span><span class="s13">MyObject</span><span class="s1"> *myObject = array.</span><span class="s13">myObjectAtIndex</span><span class="s1">[</span><span class="s4">1</span><span class="s1">];</span></p>
+    <p class="p4"><span class="s1">    </span><span class="s13">MyObject</span><span class="s1"> *myObject = dictionary.</span><span class="s13">myObjectForKey</span><span class="s1">[</span><span class="s5">@"key"</span><span class="s1">];</span></p>
+</body>
+</html>
